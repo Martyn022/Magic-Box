@@ -10,6 +10,11 @@ public class MagicBox<T> {
     }
 
     public boolean add(T item) {
+        for (T i : items) {
+            if (i == null) {
+                i = item;
+            }
+        }
         for (int i = 0; i < items.length; i++) {
             if (items[i] == null) {
                 items[i] = item;
@@ -34,14 +39,8 @@ public class MagicBox<T> {
 
     private int random() {
         Random random = new Random();
-        int randomInt = random.nextInt(volue);
+        int randomInt = random.nextInt(volue - 1);
         return randomInt;
     }
-
-    /*public void show() {
-        for (T e : items) {
-            System.out.println(e);
-        }
-    }*/
 
 }

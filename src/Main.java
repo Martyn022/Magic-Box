@@ -5,11 +5,11 @@ public class Main {
         MagicBox<Integer> boxInteger = new MagicBox<>(4);
         MagicBox<String> boxError = new MagicBox<>(2);
 
-        boxString.add("Строка 1");
-        boxString.add("Строка 2");
-        boxString.add("Строка 3");
-        boxString.add("Строка 4");
-        boxString.add("Строка 5");
+        boxString.add("1.Синяя");
+        boxString.add("2.Красная");
+        boxString.add("3.Желтая");
+        boxString.add("4.Зеленая");
+        boxString.add("5.Коричневая");
 
         String boxMagic = boxString.pick();
         System.out.println(boxMagic);
